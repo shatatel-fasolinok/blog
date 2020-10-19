@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Личный блог</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-header-nav">
+				<a href="index.html" class="main-header-logo">
+					<!-- <spav class="visually-hidden">Обновить страницу</spav> -->
+					<img src="img/logo.svg" width="130" height="82">
+				</a>
+
+				<ul class="site-nav">
+					<li class="site-nav-item">
+						<a href="#" class="site-nav-link">Статьи</a>
+					</li>
+					<li class="site-nav-item">
+						<a href="#" class="site-nav-link">Обо мне</a>
+					</li>
+					<li class="site-nav-item">
+						<a href="#" class="site-nav-link">Портфолио</a>
+					</li>
+					<li class="site-nav-item">
+						<a href="#" class="site-nav-link">Написать мне</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="articles">
+			<div class="container">
+				<div class="articles-header-wrapper">
+					<h2 class="section-title">Все статьи</h2>
+					
+					<div class="sort-wrapper">
+						<label class="sort-title" for="filter-sort-article">Выбрать тему</label>
+						
+						<button class="button-arrow" type="button">
+							<span class="visually-hidden">Открыть/закрыть список сортировки</span>
+						</button>						
+						<ul class="sort-articles-list" id="filter-sort-article">
+							<li class="sort-articles-item"><a href="#">Город</a></li>
+							<li class="sort-articles-item"><a href="#">Книги</a></li>
+							<li class="sort-articles-item"><a href="#">Путешествия</a></li>
+							<li class="sort-articles-item"><a href="#">Рецепты</a></li>
+							<li class="sort-articles-item"><a href="#">Фотографии</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="articles-list">
+					<li class="articles-item articles-item-small">
+						<h3 class="articles-item-title">Путешествие в Берлин в августе </h3>
+						<p class="articles-item-image">
+							<img src="img/article-1.jpg" alt="Улицы берлина" width="387" height="268">
+						</p>
+						<p class="articles-item-text">
+							Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
+						</p>
+						<div class="articles-bottom-wrapper">
+							<p class="articles-item-tags">Теги: путешествия</p>
+							<time class="articles-publication-time" datetime="2020-09-29">29.09.2020</time>
+						</div>
+					</li>
+					<li class="articles-item articles-item-small">
+						<h3 class="articles-item-title">Где выпить колдбрю в Москве</h3>
+						<p class="articles-item-image">
+							<img src="img/article-2.jpg" alt="Охлаждающие напитки" width="387" height="268">
+						</p>
+						<p class="articles-item-text">
+							Собрала для вас список любимых кофеен, <br>
+							где подают лучший летний напиток.
+						</p>
+						<div class="articles-bottom-wrapper">
+							<p class="articles-item-tags">Теги: город</p>
+							<time class="articles-publication-time" datetime="2020-07-24">24.07.2020</time>
+						</div>
+					</li>
+					<li class="articles-item articles-item-small">
+						<h3 class="articles-item-title">Прочитано: книжные рекомендации</h3>
+						<p class="articles-item-image">
+							<img src="img/article-3.jpg" alt="Стопка книг" width="387" height="268">
+						</p>
+						<p class="articles-item-text">
+							Рассказываю о прочитанных за последнее 
+							время книгах: фавориты и провалы.
+						</p>
+						<div class="articles-bottom-wrapper">
+							<p class="articles-item-tags">Теги: книги</p>
+							<time class="articles-publication-time" datetime="2020-07-15">15.07.2020</time>
+						</div>
+					</li>
+					<li class="articles-item articles-item-big">
+						<h3 class="articles-item-title">Снимки на плёнку</h3>
+						<p class="articles-item-image">
+							<img src="img/article-4.jpg" alt="Живописный сад" width="590" height="552">
+						</p>
+						<p class="articles-item-text">
+							Поделилась с вами весенними фотографиями, <br>
+							и секретами удачных снимков.
+						</p>
+						<div class="articles-bottom-wrapper">
+							<p class="articles-item-tags">Теги: фотографии</p>
+							<time class="articles-publication-time" datetime="2020-06-29">29.06.2020</time>
+						</div>
+					</li>
+					<li class="articles-item articles-item-big">
+						<h3 class="articles-item-title">Домашний чизкейк</h3>
+						<p class="articles-item-image">
+							<img src="img/article-5.jpg" alt="Аппетитный домашний чизкейк" width="590" height="552">
+						</p>
+						<p class="articles-item-text">
+							Что может быть лучше чизкейка с сезонными
+							ягодами? Только домашний чизкейк!
+						</p>
+						<div class="articles-bottom-wrapper">
+							<p class="articles-item-tags">Теги: рецепты</p>
+							<time class="articles-publication-time" datetime="2020-06-24">24.06.2020</time>
+						</div>
+					</li>
+				</ul>
+				
+				<a href="articles.html" class="button button-more">Показать ещё</a>
+			</div>
+		</section>
+
+		<section class="author">
+			<div class="container">
+				<h2 class="section-title">Обо мне</h2>
+				
+				<div class="author-column-left">
+					<p class="author-photo">
+						<img src="img/author-photo.jpg" alt="Фото автора блога" width="590" height="693">
+					</p>
+				</div>
+				
+				<div class="author-column-right">
+
+					<div class="author-text-wrapper">
+						<p class="author-text">
+							Всем привет! Меня зовут Аня, и это мой личный блог. <br>
+							Здесь ты найдёшь рассказы о моих путешествиях, снимки <br>
+							на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+							что мне инетресно.
+						</p>
+						
+						<p class="author-text">
+							Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+							портфолио. Ниже размещены несколько моих лучших
+							рабочих текстов. Буду рада новым сотрудничествам!
+						</p>
+						
+						<p class="author-text">
+							Если вы хотите написать мне — это можно сделать в соцсетях
+							или через <a href="#" class="to-form">форму</a>. Всегда приятно услышать обратную связь <br>
+							от читателей и познакомиться поближе.
+						</p>
+						
+						<p class="author-text">Приятного чтения!</p>
+					</div>
+
+					
+					<p class="author-slogan">
+						Я верю, что каждый раз пробуя новое,
+						выходящее за зону моего комфорта, <br>
+						я действительно узнаю настояющую
+						себя. 
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Портфолио -->
+		<section class="portfolio">
+			<div class="container">
+				<h2 class="section-title">Портфолио</h2>
+				
+				<ul class="portfolio-list">
+					<li class="portfolio-item">
+						<h3 class="portfolio-item-title">Блог HTML Academy</h3>
+						<h4 class="portfolio-item-subtitle">«Как учиться продуктивно»</h4>
+						<p class="portfolio-intro-text">
+							Про основные методы обучения, <br>
+							которые помогут быстро и надолго
+							запомнить информацию.
+						</p>
+					</li>
+					<li class="portfolio-item portfolio-item-light">
+						<h3 class="portfolio-item-title">Журнал «LNK»</h3>
+						<h4 class="portfolio-item-subtitle">«Зачем поцели нужны человеку? <br> И какие они бывают»</h4>
+						<p class="portfolio-intro-text">
+							Поцелуи — повсеместная ежедневная
+							практика. Но зачем люди целуются? <br>
+							Какие смысли вкладывают в этот ритуал? <br>	
+							И где корни этой практики?
+						</p>
+					</li>
+					<li class="portfolio-item">
+						<h3 class="portfolio-item-title">Журнал «Т — Л»</h3>
+						<h4 class="portfolio-item-subtitle">«Советы по эффективной удалённой работе»</h4>
+						<p class="portfolio-intro-text">
+							Поделилась лайфхаками, которые помогают
+							мне работать продуктивно из дома. 
+						</p>
+					</li>
+				</ul>
+				
+				<a href="portfolio.html" class="button button-more">Показать ещё</a>
+			</div>
+		</section>
+
+		<!-- Написать мне -->
+		<section class="appointment">
+			<div class="container">
+				<h2 class="section-title">Написать мне</h2>
+				
+				<form action="#" method="post" class="appointment-form">
+					<p class="appointment-item">
+						<label for="username-field">Ваше имя</label>
+						<input type="text" name="username" id="username-field" placeholder="Иван Иванов">
+					</p>
+					<p class="appointment-item">
+						<label for="email-field">Email</label>
+						<input type="email" name="email" id="email-field" placeholder="google@gmail.com">
+					</p>
+					<p class="appointment-item">
+						<label for="message-field">Сообщение</label>
+						<textarea name="message" id="message-field" cols="30" rows="10" placeholder="Напишите здесь ваше сообщение"></textarea>
+					</p>
+
+					<button class="button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+			<section class="social">
+				<h2 class="visually-hidden">Мои соц. сети</h2>
+
+				<ul class="social-list">
+					<li class="social-item"><a href="#" class="social-link">ВК</a></li>
+					<li class="social-item"><a href="#" class="social-link">Телеграм</a></li>
+					<li class="social-item"><a href="#" class="social-link">Инстаграм</a></li>
+					<li class="social-item"><a href="#" class="social-link">Твиттер</a></li>
+				</ul>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
